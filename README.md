@@ -72,7 +72,7 @@ Requirements:
 Example interaction:
 ```
 Enter a temperature in Fahrenheit: 98.6
-98.6°F is equal to 37.0°C
+98.6F is equal to 37.0C
 ```
 
 ### 2. Running Your Code
