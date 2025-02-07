@@ -1,0 +1,14 @@
+{
+    "tests": [
+      {
+        "name": "Temperature Converter Tests",
+        "setup": "gradle clean test",
+        "run": "gradle test",
+        "input": "",
+        "output": "",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 100
+      }
+    ]
+  }

@@ -1,6 +1,7 @@
 # Temperature Converter Assignment
 
 Welcome to your first Java programming assignment! This project will help you get familiar with GitHub Classroom while practicing basic Java programming concepts.
+You'll be working on this project as a group, but graded individually. Once your group all submits, you're welcome to head out.
 
 ## Learning Objectives
 - Understanding basic Java class and method structure
@@ -13,7 +14,7 @@ Welcome to your first Java programming assignment! This project will help you ge
 ### Prerequisites
 - Java JDK 11 or higher installed on your computer
 - Git installed on your computer
-- A code editor or IDE (We recommend IntelliJ IDEA or VS Code)
+- A code editor or IDE (I recommend VS Code)
 
 ### Setup Instructions
 1. Accept the GitHub Classroom assignment link (provided by your instructor)
@@ -22,6 +23,28 @@ Welcome to your first Java programming assignment! This project will help you ge
    git clone <your-repository-url>
    ```
 3. Open the project in your preferred IDE
+
+## Understanding the Project Structure
+This project looks different from the single Java files you've worked with in zyBooks! That's because it's a complete Java project with testing capabilities. Here's what you'll find:
+
+```
+your-repository/
+├── src/
+│   ├── main/
+│   │   └── java/          <- This is where you'll put your TemperatureConverter.java
+│   └── test/
+│       └── java/          <- This contains the tests that will check your code
+├── build.gradle           <- This tells Java how to run your project
+├── gradlew               <- These help run the project
+└── gradlew.bat           <- on different computers
+```
+
+Don't worry about all these extra files! You only need to:
+1. Create your `TemperatureConverter.java` file in the `src/main/java` directory
+2. Write your code according to the requirements below
+3. Commit and push your changes
+
+The other files help me automatically test your code when you submit it.
 
 ## Your Tasks
 
