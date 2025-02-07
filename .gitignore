@@ -1,7 +1,9 @@
-# Gradle
-.gradle/
-build/
-!gradle-wrapper.jar
+# Compiled class files
+*.class
+
+# Package files
+*.jar
+!lib/junit-platform-console-standalone-1.8.2.jar
 
 # IDE - IntelliJ IDEA
 .idea/
@@ -17,26 +19,12 @@ out/
 bin/
 
 # IDE - VS Code
-.vscode/
-
-# Compiled class files
-*.class
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
 
 # Log files
 *.log
-
-# Package files
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs
-hs_err_pid*
-replay_pid*
 
 # Mac
 .DS_Store

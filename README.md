@@ -30,15 +30,15 @@ This project looks different from the single Java files you've worked with in zy
 ```
 your-repository/
 ├── src/
-│   ├── main/
-│   │   └── java/          <- This is where you'll put your TemperatureConverter.java
-│   └── test/
-│       └── java/          <- This contains the tests that will check your code
-├── build.gradle           <- This tells Java how to run your project
-├── gradlew               <- These help run the project
-└── gradlew.bat           <- on different computers
+│   └── TemperatureConverter.java    <- Create your code here
+├── test/
+│   └── TemperatureConverterTest.java <- Tests that check your code
+├── lib/
+│   └── junit-platform-console-standalone-1.8.2.jar
+└── .vscode/
+    ├── launch.json    <- Helps VS Code run your code
+    └── settings.json  <- Configures Java in VS Code
 ```
-
 Don't worry about all these extra files! You only need to:
 1. Create your `TemperatureConverter.java` file in the `src/main/java` directory
 2. Write your code according to the requirements below
@@ -61,22 +61,36 @@ Requirements:
 - Method names must be exactly as shown above
 - Methods must use the specified parameter names
 - Methods must return double values
-- Use the following formulas:
+- Include a main method that:
+  - Uses Scanner to get a temperature in Fahrenheit from the user
+  - Converts it to Celsius using your toCelsius method
+  - Displays the result
+- Use these formulas:
   - Celsius = (Fahrenheit - 32) × 5/9
   - Fahrenheit = (Celsius × 9/5) + 32
 
-### 2. Implementation Details
-Your code will be tested against unit tests, so make sure:
-- Your class and method names match exactly
-- Your calculations are accurate
-- You use double precision for calculations
-- You don't modify the method signatures
+Example interaction:
+```
+Enter a temperature in Fahrenheit: 98.6
+98.6°F is equal to 37.0°C
+```
+
+### 2. Running Your Code
+To run your program in VS Code:
+1. Open TemperatureConverter.java
+2. Click the play button in the top right
+   - If you don't see the play button, or you get an error try:
+     1. Opening Command Palette (Ctrl+Shift+P or Cmd+Shift+P)
+     2. Running "Java: Clean Java Language Server Workspace"
+     3. Selecting "Restart and delete"
+     4. Waiting for VS Code to rebuild
 
 ### 3. Testing Your Code
-The repository includes unit tests that will verify your implementation. To pass the assignment:
-- All tests must pass
-- Your code must compile without errors
-- Method names must match exactly as specified
+Your code will be tested in two ways:
+1. Unit tests that check your conversion methods directly
+2. Input/output tests that check your program's interaction with users
+
+Both types of tests run automatically when you push your code.
 
 ## Submitting Your Work
 You can submit your work as many times as required until the deadline.
@@ -93,10 +107,14 @@ Note: If you get an error about configuring "user.name" and "user.email" in Git,
    git push origin main
    ```
 
+Once this has all been submitted, you can refresh the github page, if you see a green checkmark, you're good to go.
+
 ## Grading Criteria
-- [x] Correct implementation of toCelsius method (40%)
-- [x] Correct implementation of toFahrenheit method (40%)
-- [x] Code quality and documentation (20%)
+- [x] Compilation (10%)
+- [x] Unit Tests (40%)
+- [x] F to C Conversion I/O Test (25%)
+- [x] C to F Conversion I/O Test (25%)
+
 
 ## Need Help?
 - Review the Java documentation on double precision calculations

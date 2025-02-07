@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "Compilation Check",
+      "setup": "javac src/TemperatureConverter.java",
+      "run": "javac src/TemperatureConverter.java",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Unit Tests",
+      "setup": "javac -cp lib/junit-platform-console-standalone-1.8.2.jar src/TemperatureConverter.java test/TemperatureConverterTest.java",
+      "run": "java -jar lib/junit-platform-console-standalone-1.8.2.jar --class-path src:test --scan-class-path",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 40
+    },
+    {
+      "name": "Main Method Test",
+      "setup": "",
+      "run": "java -classpath src TemperatureConverter",
+      "input": "98.6\n",
+      "output": "98.6F is equal to 37.0C",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 40
+    }
+  ]
+}

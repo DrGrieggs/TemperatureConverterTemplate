@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "TemperatureConverter",
+            "request": "launch",
+            "mainClass": "TemperatureConverter",
+            "projectName": "temperaturetest-grieggs_49b2b516"
+        },
+        {
+            "type": "java",
+            "name": "Run Temperature Converter",
+            "request": "launch",
+            "mainClass": "TemperatureConverter",
+            "projectName": "temperature-converter"
+        }
+    ]
+}
