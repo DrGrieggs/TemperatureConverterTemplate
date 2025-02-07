@@ -40,7 +40,7 @@ your-repository/
     └── settings.json  <- Configures Java in VS Code
 ```
 Don't worry about all these extra files! You only need to:
-1. Create your `TemperatureConverter.java` file in the `src/main/java` directory
+1. Create your `TemperatureConverter.java` file in the `src/` directory
 2. Write your code according to the requirements below
 3. Commit and push your changes
 
@@ -110,10 +110,9 @@ Note: If you get an error about configuring "user.name" and "user.email" in Git,
 Once this has all been submitted, you can refresh the github page, if you see a green checkmark, you're good to go.
 
 ## Grading Criteria
-- [x] Compilation (10%)
+- [x] Compilation (20%)
 - [x] Unit Tests (40%)
-- [x] F to C Conversion I/O Test (25%)
-- [x] C to F Conversion I/O Test (25%)
+- [x] F to C Conversion I/O Test (40%)
 
 
 ## Need Help?
@@ -122,6 +121,3 @@ Once this has all been submitted, you can refresh the github page, if you see a 
 - Review Git commands at [GitHub's Git Guide](https://github.com/git-guides)
 
 Remember: The goal is to learn both Java and GitHub. Don't hesitate to ask questions if you get stuck!
-
-## License
-This project is licensed under the MIT License - see the LICENSE file for details
